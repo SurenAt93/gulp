@@ -1,0 +1,17 @@
+div.header {
+  width: 200px;
+  height: 200px;
+  background-color: #f00;
+  opacity: 0.2;
+}
+
+body {
+  font: 12px Helvetica, Arial, sans-serif;
+}
+div.cat {
+  background-image: url("img/cat.jpg");
+  width: 100px;
+  height: 100px;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlcy9oZWFkZXIuc3R5bCIsInN0eWxlcy9tYWluLnN0eWwiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxPQUFPLE1BQVA7RUFDQSxRQUFRLE1BQVI7RUFDQSxrQkFBa0IsS0FBbEI7RUFDQSxTQUFTLElBQVQ7OztBQ0pGO0VBQ0UsTUFBb0Isa0NBQXBCOztBQUdGO0VBQ0Usa0JBQW1DLG1CQUFuQztFQUNBLE9BQU8sTUFBUDtFQUNBLFFBQVEsTUFBUiIsImZpbGUiOiJtYWluLmNzcyIsInNvdXJjZVJvb3QiOiIvc291cmNlLyIsInNvdXJjZXNDb250ZW50IjpbImRpdi5oZWFkZXJcbiAgd2lkdGg6IDIwMHB4XG4gIGhlaWdodDogMjAwcHhcbiAgYmFja2dyb3VuZC1jb2xvcjogcmVkXG4gIG9wYWNpdHk6IDAuMiIsImJvZHlcbiAgZm9udDogMTJweCBIZWx2ZXRpY2EsIEFyaWFsLCBzYW5zLXNlcmlmXG5cblxuZGl2LmNhdFxuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJ2ltZy9jYXQuanBnJylcbiAgd2lkdGg6IDEwMHB4O1xuICBoZWlnaHQ6IDEwMHB4O1xuIl19 */
