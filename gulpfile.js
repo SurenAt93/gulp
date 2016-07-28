@@ -8,6 +8,9 @@ const debug       = require('gulp-debug');
 const gulpIf      = require('gulp-if');
 const newer       = require('gulp-newer');
 const del         = require('del');
+const browserSync = require('browser-sync').create();
+const notify      = require('gulp-notify');
+const combiner    = require('stream-combiner2').obj;
 
 const isDevelopment   = !process.env.NODE_ENV ||
                          process.env.NODE_ENV == 'development';
@@ -81,7 +84,32 @@ gulp
 
 gulp
   .task(
+    'serve',
+    function() {
+      browserSync.init({
+        server: 'public'
+      });
+
+      browserSync
+        .watch('public/**/*.*')
+        .on('change', browserSync.reload);
+    }
+  );
+  
+gulp
+  .task(
     'dev',
     gulp
-      .series('build', 'watch')
+      .series('build',
+        gulp
+          .parallel('watch', 'serve')
+      )
   );
+
+
+
+
+  // combiner
+  //     
+  //     
+  //     
